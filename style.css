@@ -119,3 +119,29 @@ nav a{
     height: 680px;
 }
 
+#logo-container h2 {
+    text-align: center;
+    font-family: "CursorGothic";
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: .01em;
+    margin-bottom: 22.4px;
+}
+
+#logo-garden {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px;
+    padding-bottom: 33.6px;
+}
+
+.logo {
+    padding: 0px 7.5px;
+    width: 144.75px;
+    height: 100px;
+    background-color: #1B1913;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
