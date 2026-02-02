@@ -1,0 +1,77 @@
+:root{
+    --bg-black-cursor: #14120B;
+    --accent-color: #EDECEC;
+    --accent-font: 
+    --border-color: 
+}
+
+@font-face {
+    font-family: "CursorGothic";
+    src: url(assets/fonts/CursorGothic_Regular-s.p.a361088d.woff2);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-black-cursor);
+}
+
+header{
+    padding: 0px 1.4vw;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-black-cursor);
+    width: 100%;
+    height: 52px;
+}
+
+nav img{
+    cursor: pointer;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    color: var(--accent-color);
+    text-decoration: none;
+    padding: 5.6px 15px;
+    font-size: 14px;
+    font-family: "CursorGothic";
+}
+
+#nav-actions button {
+    font-size: 14px;
+    font-family: "CursorGothic";
+    border-radius: 20px;
+    padding: 2.8px 10.5px;
+    cursor: pointer;
+}
+
+#signin {
+    color: var(--accent-color);
+    background-color: var(--bg-black-cursor);
+    border: 2px solid #2b2923;
+    margin-right: 6px;
+}
+
+#download {
+    color: var(--bg-black-cursor);
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
