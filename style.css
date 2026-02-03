@@ -1,8 +1,9 @@
 :root{
     --bg-black-cursor: #14120B;
     --accent-color: #EDECEC;
-    --accent-font: 
-    --border-color: 
+    --bg-black-secondary: #1B1913;
+    --secondary-color: color-mix(in oklab, var(--accent-color) 60%, transparent);
+    --secondary-btn-color: #F54E00;
 }
 
 @font-face {
@@ -140,8 +141,62 @@ nav a{
     padding: 0px 7.5px;
     width: 144.75px;
     height: 100px;
-    background-color: #1B1913;
+    background-color: var(--bg-black-secondary);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#features {
+    background-color: var(--bg-black-cursor);
+    padding: 67.2px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.feature-card {
+    background-color: var(--bg-black-secondary);
+    padding: 17.5px;
+    height: 685px;
+    border-radius: 2px;
+    display: flex;
+}
+
+.feature-card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-card div h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.feature-card div div {
+    color: var(--secondary-color);
+    font-size: 22px;
+}
+
+.feature-card div span {
+    margin-top: 16px;
+    color: var(--secondary-btn-color);
+    cursor: pointer;
+}
+
+.feature-card img {
+    width: 77%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+#agent-text, #ecosystem-text {
+    padding-left: 2.5px;
+    padding-right: 30px;
+}
+
+#tab-text {
+    padding-right: 2.5px;
+    padding-left: 30px;
 }
